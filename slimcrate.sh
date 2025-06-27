@@ -1,0 +1,16 @@
+mkdir -p tmp100
+mv crates/collections tmp100
+mv crates/gpui tmp100
+mv crates/gpui_macros tmp100
+mv crates/http_client tmp100
+mv crates/http_client_tls tmp100
+mv crates/media tmp100
+mv crates/refineable tmp100
+mv crates/reqwest_client tmp100
+mv crates/semantic_version tmp100
+mv crates/sum_tree tmp100
+mv crates/util tmp100
+mv crates/util_macros tmp100
+mv crates/zlog tmp100
+rm -fr crates
+mv tmp100 crates
