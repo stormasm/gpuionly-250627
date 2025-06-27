@@ -1,209 +1,23 @@
 [workspace]
 resolver = "2"
+
 members = [
-    "crates/activity_indicator",
-    "crates/agent_ui",
-    "crates/agent",
-    "crates/agent_settings",
-    "crates/anthropic",
-    "crates/askpass",
-    "crates/assets",
-    "crates/assistant_context",
-    "crates/assistant_slash_command",
-    "crates/assistant_slash_commands",
-    "crates/assistant_tool",
-    "crates/assistant_tools",
-    "crates/audio",
-    "crates/auto_update",
-    "crates/auto_update_helper",
-    "crates/auto_update_ui",
-    "crates/aws_http_client",
-    "crates/bedrock",
-    "crates/breadcrumbs",
-    "crates/buffer_diff",
-    "crates/call",
-    "crates/channel",
-    "crates/cli",
-    "crates/client",
-    "crates/clock",
-    "crates/collab",
-    "crates/collab_ui",
     "crates/collections",
-    "crates/command_palette",
-    "crates/command_palette_hooks",
-    "crates/component",
-    "crates/context_server",
-    "crates/copilot",
-    "crates/credentials_provider",
-    "crates/dap",
-    "crates/dap_adapters",
-    "crates/db",
-    "crates/debug_adapter_extension",
-    "crates/debugger_tools",
-    "crates/debugger_ui",
-    "crates/deepseek",
-    "crates/diagnostics",
-    "crates/docs_preprocessor",
-    "crates/editor",
-    "crates/eval",
-    "crates/extension",
-    "crates/extension_api",
-    "crates/extension_cli",
-    "crates/extension_host",
-    "crates/extensions_ui",
-    "crates/feature_flags",
-    "crates/feedback",
-    "crates/file_finder",
-    "crates/file_icons",
-    "crates/fs",
-    "crates/fsevent",
-    "crates/fuzzy",
-    "crates/git",
-    "crates/git_hosting_providers",
-    "crates/git_ui",
-    "crates/go_to_line",
-    "crates/google_ai",
     "crates/gpui",
     "crates/gpui_macros",
-    "crates/gpui_tokio",
-
-    "crates/html_to_markdown",
     "crates/http_client",
     "crates/http_client_tls",
-    "crates/icons",
-    "crates/image_viewer",
-    "crates/indexed_docs",
-    "crates/inline_completion",
-    "crates/inline_completion_button",
-    "crates/inspector_ui",
-    "crates/install_cli",
-    "crates/jj",
-    "crates/jj_ui",
-    "crates/journal",
-    "crates/language",
-    "crates/language_extension",
-    "crates/language_model",
-    "crates/language_models",
-    "crates/language_selector",
-    "crates/language_tools",
-    "crates/languages",
-    "crates/livekit_api",
-    "crates/livekit_client",
-    "crates/lmstudio",
-    "crates/lsp",
-    "crates/markdown",
-    "crates/markdown_preview",
     "crates/media",
-    "crates/menu",
-    "crates/svg_preview",
-    "crates/migrator",
-    "crates/mistral",
-    "crates/multi_buffer",
-    "crates/node_runtime",
-    "crates/notifications",
-    "crates/ollama",
-    "crates/open_ai",
-    "crates/open_router",
-    "crates/outline",
-    "crates/outline_panel",
-    "crates/panel",
-    "crates/paths",
-    "crates/picker",
-    "crates/prettier",
-    "crates/project",
-    "crates/project_panel",
-    "crates/project_symbols",
-    "crates/prompt_store",
-    "crates/proto",
-    "crates/recent_projects",
     "crates/refineable",
-    "crates/refineable/derive_refineable",
-    "crates/release_channel",
-    "crates/remote",
-    "crates/remote_server",
-    "crates/repl",
     "crates/reqwest_client",
-    "crates/rich_text",
-    "crates/rope",
-    "crates/rpc",
-    "crates/rules_library",
-    "crates/schema_generator",
-    "crates/search",
-    "crates/semantic_index",
     "crates/semantic_version",
-    "crates/session",
-    "crates/settings",
-    "crates/settings_ui",
-    "crates/snippet",
-    "crates/snippet_provider",
-    "crates/snippets_ui",
-    "crates/sqlez",
-    "crates/sqlez_macros",
-    "crates/story",
-    "crates/storybook",
-    "crates/streaming_diff",
     "crates/sum_tree",
-    "crates/supermaven",
-    "crates/supermaven_api",
-    "crates/tab_switcher",
-    "crates/task",
-    "crates/tasks_ui",
-    "crates/telemetry",
-    "crates/telemetry_events",
-    "crates/terminal",
-    "crates/terminal_view",
-    "crates/text",
-    "crates/theme",
-    "crates/theme_extension",
-    "crates/theme_importer",
-    "crates/theme_selector",
-    "crates/time_format",
-    "crates/title_bar",
-    "crates/toolchain_selector",
-    "crates/ui",
-    "crates/ui_input",
-    "crates/ui_macros",
-    "crates/ui_prompt",
     "crates/util",
     "crates/util_macros",
-    "crates/vercel",
-    "crates/vim",
-    "crates/vim_mode_setting",
-    "crates/watch",
-    "crates/web_search",
-    "crates/web_search_providers",
-    "crates/welcome",
-    "crates/workspace",
-    "crates/worktree",
-    "crates/zed",
-    "crates/zed_actions",
-    "crates/zeta",
     "crates/zlog",
-    "crates/zlog_settings",
-
-    #
-    # Extensions
-    #
-
-    "extensions/emmet",
-    "extensions/glsl",
-    "extensions/html",
-    "extensions/perplexity",
-    "extensions/proto",
-    "extensions/ruff",
-    "extensions/slash-commands-example",
-    "extensions/snippets",
-    "extensions/test-extension",
-    "extensions/toml",
-
-    #
-    # Tooling
-    #
-
-    "tooling/workspace-hack",
-    "tooling/xtask",
 ]
-default-members = ["crates/zed"]
+
+default-members = ["crates/gpui"]
 
 [workspace.package]
 publish = false
@@ -480,7 +294,7 @@ json_dotpath = "1.1"
 jsonschema = "0.30.0"
 jsonwebtoken = "9.3"
 jupyter-protocol = { git = "https://github.com/ConradIrwin/runtimed", rev = "7130c804216b6914355d15d0b91ea91f6babd734" }
-jupyter-websocket-client = {  git = "https://github.com/ConradIrwin/runtimed" ,rev = "7130c804216b6914355d15d0b91ea91f6babd734" }
+jupyter-websocket-client = { git = "https://github.com/ConradIrwin/runtimed", rev = "7130c804216b6914355d15d0b91ea91f6babd734" }
 libc = "0.2"
 libsqlite3-sys = { version = "0.30.1", features = ["bundled"] }
 linkify = "0.10.0"
@@ -491,7 +305,7 @@ metal = "0.29"
 moka = { version = "0.12.10", features = ["sync"] }
 naga = { version = "25.0", features = ["wgsl-in"] }
 nanoid = "0.4"
-nbformat = {  git = "https://github.com/ConradIrwin/runtimed", rev = "7130c804216b6914355d15d0b91ea91f6babd734" }
+nbformat = { git = "https://github.com/ConradIrwin/runtimed", rev = "7130c804216b6914355d15d0b91ea91f6babd734" }
 nix = "0.29"
 num-format = "0.4.4"
 objc = "0.2"
@@ -531,7 +345,7 @@ reqwest = { git = "https://github.com/zed-industries/reqwest.git", rev = "951c77
     "stream",
 ] }
 rsa = "0.9.6"
-runtimelib = {  git = "https://github.com/ConradIrwin/runtimed", rev = "7130c804216b6914355d15d0b91ea91f6babd734", default-features = false, features = [
+runtimelib = { git = "https://github.com/ConradIrwin/runtimed", rev = "7130c804216b6914355d15d0b91ea91f6babd734", default-features = false, features = [
     "async-dispatcher-runtime",
 ] }
 rust-embed = { version = "8.4", features = ["include-exclude"] }
